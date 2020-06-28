@@ -12,4 +12,4 @@ vscode:
 
 tasks:
   - init: npm install
-    command: npm run start
+    command: npm install -g @google/clasp

@@ -1,5 +1,18 @@
-# Dev Container - Google App Script
-A setup for working on Google App Script in a VS Code or Gitpod container
+# Dev Container - Google Apps Script
+A setup for working on Google Apps Script in a VS Code or Gitpod container
+
+## Clasp
+
+Login
+```
+clasp login --no-localhost
+```
+
+Create a Project
+```
+clasp create --title "Clasp Demo" --type standalone
+```
+
 
 ## VS Code
 
@@ -13,10 +26,6 @@ Container composition
 - using this [Dockerfile](https://github.com/microsoft/vscode-dev-containers/blob/master/containers/typescript-node-12/.devcontainer/Dockerfile)
 - `FROM mcr.microsoft.com/vscode/devcontainers/typescript-node:12`
 
-To start lite-server
-```
-npm start 
-```
 ## Gitpod
 
 - Click on this button [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/lcenchew/dev-container-gas)
