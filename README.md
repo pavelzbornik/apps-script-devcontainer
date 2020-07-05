@@ -14,7 +14,7 @@ clasp login --no-localhost
 
 Create a Project
 ```
-clasp create --title "Clasp Demo" --type standalone
+clasp create --title "Title" --type standalone --rootDir src
 ```
 
 Edit
