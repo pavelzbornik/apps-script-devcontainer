@@ -1,7 +1,11 @@
+[![clasp](https://img.shields.io/badge/built%20with-clasp-4285f4.svg)](https://github.com/google/clasp)
 # Dev Container - Google Apps Script
 A setup for working on Google Apps Script in a VS Code or Gitpod container
 
 ## Clasp
+
+- https://github.com/google/clasp
+- https://developers.google.com/apps-script/guides/clasp
 
 Login
 ```
@@ -13,6 +17,16 @@ Create a Project
 clasp create --title "Clasp Demo" --type standalone
 ```
 
+Edit
+.clasp.json
+```
+"rootDir": "src"
+```
+
+appsscript.json
+```
+"timeZone": "Asia/Singapore"
+```
 
 ## VS Code
 
