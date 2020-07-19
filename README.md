@@ -2,31 +2,44 @@
 # Dev Container - Google Apps Script
 A setup for working on Google Apps Script in a VS Code or Gitpod container
 
-## Clasp
+## Quick Start
 
-- https://github.com/google/clasp
-- https://developers.google.com/apps-script/guides/clasp
-
-Login
+Login the user
 ```
 clasp login --no-localhost
 ```
 
-Create a Project
+Create a new Project
 ```
-clasp create --title "Title" --type standalone --rootDir src
-```
-
-Edit
-.clasp.json
-```
-"rootDir": "src"
+clasp create --title "Title" --type standalone --rootDir ./src
+clasp create --title "Title" --type forms --rootDir ./src
+clasp create --title "Title" --parentId "*******" --rootDir ./src
 ```
 
-appsscript.json
+Clone and work on an existing project
+```
+clasp clone "*******" --rootDir ./src
+```
+
+Watch and push code when saved
+```
+clasp push --watch
+```
+
+Edit (if need to)
+- .clasp.json
+```
+"rootDir": "./src"
+```
+- appsscript.json
 ```
 "timeZone": "Asia/Singapore"
 ```
+
+## Clasp
+
+- https://github.com/google/clasp
+- https://developers.google.com/apps-script/guides/clasp
 
 ## VS Code
 
