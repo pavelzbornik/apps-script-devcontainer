@@ -36,6 +36,13 @@ Edit (if need to)
 "timeZone": "Asia/Singapore"
 ```
 
+### other useful commands
+
+Open in the script editor
+```
+clasp open
+```
+
 ## Clasp
 
 - https://github.com/google/clasp
