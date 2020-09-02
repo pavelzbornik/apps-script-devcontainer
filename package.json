@@ -1,6 +1,6 @@
 {
   "name": "dev-container-gas",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A setup for working on google app script in a container with VS Code or Gitpod",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
