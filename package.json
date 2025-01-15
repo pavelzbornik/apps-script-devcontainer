@@ -4,7 +4,9 @@
   "description": "A setup for working on google app script in a container with VS Code or Gitpod",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "clasp push --watch"
+    "watch": "clasp push --watch",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\""
   },
   "repository": {
     "type": "git",
@@ -16,7 +18,12 @@
     "url": "https://github.com/lcenchew/dev-container-gas/issues"
   },
   "homepage": "https://github.com/lcenchew/dev-container-gas#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
+    "eslint": "^9.18.0",
+    "prettier": "^3.4.2"
+  },
   "dependencies": {
     "@google/clasp": "2.5.0",
     "@types/google-apps-script": "^1.0.91"
