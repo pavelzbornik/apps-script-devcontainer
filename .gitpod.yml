@@ -13,4 +13,4 @@ vscode:
 
 tasks:
   - init: npm install
-    command: npm install -g @google/clasp && npm i -S @types/google-apps-script
+    command: npx clasp --version
