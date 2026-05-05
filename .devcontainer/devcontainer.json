@@ -1,20 +1,20 @@
-// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.117.1/containers/typescript-node-12
+// For format details, see https://aka.ms/devcontainer.json
+// Image source: https://github.com/devcontainers/images/tree/main/src/typescript-node
 {
-	"name": "Node.js 12 & TypeScript + Google App Script",
+	"name": "Node.js 20 & TypeScript + Google Apps Script",
 	"dockerFile": "Dockerfile",
 
-	// Set *default* container specific settings.json values on container create.
 	"customizations": {
 		"vscode": {
 			"settings": {
-				"terminal.integrated.shell.linux": "/bin/bash",
+				"terminal.integrated.defaultProfile.linux": "bash",
 				"editor.formatOnSave": true,
 				"editor.defaultFormatter": "esbenp.prettier-vscode",
 				"typescript.updateImportsOnFileMove.enabled": "always",
 				"[typescript]": {
 					"editor.defaultFormatter": "esbenp.prettier-vscode"
-				},
+				}
+			},
 			"extensions": [
 				"vivaxy.vscode-conventional-commits",
 				"dbaeumer.vscode-eslint",
@@ -31,9 +31,8 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [3000, 3001],
 
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
-	"postCreateCommand": "npm install -g @google/clasp; npm i -S @types/google-apps-script;npm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin prettier",
+	// Run npm install after container creation; clasp + types are project deps now.
+	"postCreateCommand": "npm install"
 
 	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
 	// "remoteUser": "node"
